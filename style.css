@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    min-width: 131rem;
+    min-height: 100vh;    
+    height: auto;
+    background-color: rgb(209, 222, 236);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+.container .top-headline{
+    text-align: center;
+    margin: 2rem;
+}
+.container .top-headline h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    background: linear-gradient(5deg,rgb(109, 245, 143),rgb(75, 159, 255), rgb(201, 21, 162));
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100%;
+    color: transparent;
+}
+.container .content{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;    
+    display: flex;
+}
+.container .content .left{
+    min-width: 28rem;
+    height: 66rem;
+    background: linear-gradient(45deg, rgb(93, 64, 223), rgb(43, 146, 124), rgb(154, 98, 156), rgb(59, 92, 134));
+    background-size: 400%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: leftanim 5s ease infinite alternate;
+}
+
+@keyframes leftanim {
+    from{background-position: left;}    
+    to{background-position: right;}    
+}
+
+
+.container .content .left .image{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    place-content: center;
+    width: 17rem;
+    height: 17rem;
+    background-color: rgb(168, 247, 198);
+    border-radius: 50%;
+    /* overflow: hidden; */
+    margin: 2rem 0;
+}
+.container .content .left .image img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+}
+
+
+/* name div start from here  */
+.container .content .left .name{
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+    display: grid;
+    place-content: center;
+}
+.container .content .left .name h2{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: start;
+    cursor: pointer;
+}
+.container .content .left .name h2 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container .content .left .name h5{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: start;
+    width: 100%;
+    margin-left: 2px;
+
+}
+
+/* contacts start from here ok */
+.container .content .left .contact{
+    width: 90%;
+    align-self: flex-end;
+    height: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+
+}
+.container .content .left .contact a{
+   color: aliceblue;
+   font-size: 1.5rem;
+   text-decoration: none;
+   text-align: start;   
+   transition: all .2s ease-in;
+}
+.container .content .left .contact a:hover{
+   color: rgb(104, 243, 166);    
+
+}
+.container .content .left .projects{
+    width: 90%;
+    margin-top: 2rem;
+    align-self: flex-end;
+}
+.container .content .left .projects h2{
+    font-size: 2.5rem;
+    color: rgb(107, 211, 252);
+}
+.container .content .left .projects .projects-list{
+    width: 100%;
+    margin: 2rem 1rem;
+    
+}
+.container .content .left .projects .projects-list a{
+    text-decoration: none;
+    color: aliceblue; 
+    display: flex;  
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin: 1rem;
+    width: 80%;
+    padding-bottom: .3rem;
+    border-bottom: 1.5px solid rgb(171, 227, 236); 
+    transition: all .2s ease-in;
+    
+}
+.container .content .left .projects .projects-list a:hover{
+    border-bottom: 1.5px solid rgb(104, 243, 166); 
+    color: rgb(104, 243, 166); 
+    padding-bottom: .3rem;
+  
+    
+}
+.container .content .left .projects hr{
+    height: .2rem;
+    width: 90%;
+    margin: .5rem 0;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+
+/* :right section start from here */
+.container .content .right{
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+
+.side{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.container .content .right  .skills-headline{
+    width: 20%;
+
+}
+
+.container .content .right .skills-headline .skills{
+    margin-left: 2rem;
+    display: flex;
+    justify-content: start;
+    gap: 2rem;    
+    flex-wrap: wrap;
+}
+.container .content .right .skills-headline .skills .skill-box{
+    width: 12rem;
+    height: 15rem;
+    border-radius: .5rem;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background: linear-gradient(45deg,rgba(66, 158, 233, 0.473), rgba(187, 195, 241, 0.747), rgba(44, 86, 177, 0.521));
+    background-size: 400%;
+    animation: leftanim 2s ease infinite alternate;
+}
+.container .content .right .skills-headline .skills .skill-box h4{
+    text-align: center;
+    margin: .7rem;
+    font-size: 2rem;
+    color: rgb(14, 65, 109);
+}
+.container .content .right .skills-headline .skills .skill-box .o-circle{
+    width: 10rem;
+    height: 10rem;
+    background: conic-gradient(purple 2deg, white 0deg);
+    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+.container .content .right .skills-headline .skills .skill-box .o-circle .i-circle{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg,rgb(66, 158, 233), rgb(128, 255, 202), rgb(66, 119, 233));
+    background-size: 450%;
+    animation: leftanim 5s ease infinite alternate;
+    
+}
+.container .content .right .skills-headline .skills .skill-box .o-circle .i-circle p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(19, 50, 85);
+    
+}
+
+
+
+
+
+
+.container .content .right .about-me{
+    background-color: rgb(197, 202, 230);
+    margin-left: 2rem;
+    min-width: 40rem;
+    height: 66rem;
+    width: 70%;
+    overflow: hidden;
+    padding: 2rem;
+}
+.container .content .right .about-me .profile{
+    margin: 3rem 0;
+    min-width: 100%;
+    width: 30rem;
+}
+.container .content .right .about-me .profile h2{
+   color: rgb(24, 53, 78);
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   padding-bottom: 1rem;
+}
+.container .content .right .about-me .profile p{
+   color: rgb(18, 18, 19);
+   font-size: 1.8rem; 
+   padding-bottom: 1rem;
+}
+
+
+.container .content .right .about-me .about{
+    margin: 3rem 0;
+    min-width: 100%;
+    width: 30rem;
+}
+.container .content .right .about-me .about h2{
+    color: rgb(24, 53, 78);
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   padding-bottom: 1rem;
+}
+.container .content .right .about-me .about p{
+    color: rgb(18, 18, 19);
+    font-size: 1.8rem;  
+    padding-bottom: 1rem;
+ }
+
+
+
+ .container .content .right .about-me .my-courses{
+    /* background-color: rgb(190, 121, 121); */
+    margin: 3rem 0;
+    padding: .5rem;
+    min-width: 100%;
+    width: 30rem;
+}
+.container .content .right .about-me .my-courses h2{
+    color: rgb(24, 53, 78);
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   padding-bottom: 1rem;
+}
+.container .content .right .about-me .my-courses p{
+    color: rgb(18, 18, 19);
+    font-size: 1.8rem;
+    font-weight: 600;  
+    padding-bottom: 1rem;
+ }
+ .container .content .right .about-me .my-courses ul{
+    margin-left: 4rem;
+ }
+.container .content .right .about-me .my-courses ul li{
+    color: rgb(18, 18, 19);
+    font-size: 1.7rem;
+    font-weight: 500; 
+    padding-bottom: 1rem;
+ }
+
+ footer{
+    width: 100%;
+    min-width: 131rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(13, 17, 44);
+ }
+ footer .handlers{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+ }
+ footer .handlers a{
+    font-size: 2.5rem;
+    margin: 0 .5rem;
+    color: aliceblue;
+ }
+ footer .handlers a:nth-child(1):hover{
+    color: rgb(204, 75, 97);
+ }
+ footer .handlers a:nth-child(2):hover{
+    color: rgb(96, 235, 96);
+ }
+ footer .handlers a:nth-child(3):hover{
+    color: rgb(54, 82, 238);
+ }
+ footer .handlers a:nth-child(4):hover{
+    color: rgb(128, 157, 240);
+ }
+ footer .handlers a:nth-child(5):hover{
+    color: rgb(235, 37, 37);
+ }
+ footer .handlers a:nth-child(6):hover{
+    color: rgb(81, 37, 202);
+ }
+ footer .handlers a:nth-child(7):hover{
+    color: rgb(255, 0, 43);
+ }
+ footer .handlers a:nth-child(8):hover{
+    color: rgb(104, 230, 146);
+ }
+ footer h3{
+    letter-spacing: .1rem;
+    color: rgb(142, 177, 174);
+    margin: 1rem;
+ }
